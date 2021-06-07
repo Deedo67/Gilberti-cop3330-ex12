@@ -16,10 +16,22 @@ public class ex12 {
 
         //input
         System.out.print("Enter the principal: ");
-        String prin = in.nextLine();
+        String strprin = in.nextLine();
         System.out.print("Enter the rate of interest: ");
-        String rate = in.nextLine();
+        String strrate = in.nextLine();
         System.out.print("Enter the number of years: ");
-        String years = in.nextLine();
+        String stryears = in.nextLine();
+
+        //string convert
+        int prin = Integer.parseInt(strprin);
+        double rate = Double.parseDouble(strrate);
+        int years = Integer.parseInt(stryears);
+
+        //math
+        double finrate = rate * 0.01;
+        double total = prin * (1 + (finrate * years));
+
+        //output
+        System.out.println("After "+years+" years at "+String.format("%.1f", rate)+"%, the investment will be worth $"+String.format("%.2f", total)+".");
     }
 }
