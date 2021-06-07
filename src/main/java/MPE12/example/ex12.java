@@ -28,7 +28,7 @@ public class ex12 {
         int years = Integer.parseInt(stryears);
 
         //math
-        double finrate = rate * 0.01;
+        double finrate = rate / 100;
         double total = prin * (1 + (finrate * years));
 
         //output
