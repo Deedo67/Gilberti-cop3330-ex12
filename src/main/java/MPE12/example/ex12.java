@@ -22,7 +22,7 @@ public class ex12 {
         System.out.print("Enter the number of years: ");
         String stryears = in.nextLine();
 
-        //string convert
+        //string Convert
         int prin = Integer.parseInt(strprin);
         double rate = Double.parseDouble(strrate);
         int years = Integer.parseInt(stryears);
